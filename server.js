@@ -110,7 +110,7 @@ Pergunta:
   history.splice(0, history.length - 12);
 }
 
-    res.send(assistantMessage);
+    res.type("text/plain").send(assistantMessage);
   } catch (error) {
     console.error(error);
     res.status(500).send(error.message);
